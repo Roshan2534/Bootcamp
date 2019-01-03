@@ -38,7 +38,7 @@ session_start();
     </ul>
 
     <?php if(isset($_SESSION['username'])){ ?>
-      <a href="cart.php"><button class="btn btn-outline-success my-2  mx-2 my-sm-0">view cart</button></a> 
+      <a href="cart.php"><button class="btn btn-outline-success my-2  mx-2 my-sm-0">cart</button></a> 
       <a href="logout.php"><button class="btn btn-outline-success my-2 my-sm-0">logout</button></a> 
     <?php }else{ ?>
       <a href="login.php"><button class="btn btn-outline-success my-2 my-sm-0">login</button></a> 
