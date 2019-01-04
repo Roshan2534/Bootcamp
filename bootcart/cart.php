@@ -21,7 +21,7 @@ include 'backend/getproducts.php';
     <div class="media-body">
       <h5 class="mt-0 mb-1"><?=$product['name']?> - Rs.<?=$product['price']?></h5>
       <p><?=$product['description']?></p>
-      <button class="btn btn-success btn-block">place order</button>
+      <button  onclick="placeorder('<?=$product['id']?>','<?=$_SESSION['id']?>')" class="btn btn-success btn-block">place order</button>
     </div>
   </li>
 <?php } ?>

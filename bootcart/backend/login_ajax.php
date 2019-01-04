@@ -10,6 +10,7 @@
         session_start();
         $_SESSION['id']=$row['id'];
         $_SESSION['username']=$row['username'];
+        $_SESSION['isAdmin']=$row['isAdmin'];
         echo 'success';
     }
    

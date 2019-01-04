@@ -73,3 +73,26 @@ function login(){
         }
     });
 }
+function placeorder(productid,userid){
+    $.ajax({
+        type: "POST",
+        url: "backend/placeorder_ajax.php",
+        data: {
+            //data goes here
+           productid,
+           userid
+        },
+        success: function (data) {
+           //data is returned here
+         if(data == 'success'){
+             alert("order placed");
+             window.location = 'cart.php';
+         }
+         else{
+             alert("there was an error please try again later");
+             window.location = '';
+         }
+        }
+    });
+
+}
